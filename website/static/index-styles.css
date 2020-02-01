@@ -1,0 +1,56 @@
+
+.top-bar {
+    text-align: center;
+    background: black;
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    height: 100px;
+    line-height: 100px;
+}
+.top-bar>span {
+    font-size: large;
+    color: aliceblue;
+}
+
+form {
+    width: 40%;
+    margin: 10% auto;
+    display: inline-flex;
+    flex-flow: column;
+}
+#file {
+    width: 0.1px;
+    height: 0.1px;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+label {
+    align-self: center;
+    background: #841513;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+input[type="submit"] {
+    padding: 20px;
+    width: 40%;
+    align-self: center;
+}
+
+#left_image, #right_image {
+    height: auto;
+    display: inline-block;
+}
+#left_image>img, #right_image>img {
+    width: 100%;
+}
+div#content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartoonizer ZNU</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index-styles.css') }}">
+</head>
+<body>
+    <div class="top-bar">
+        <span>Cartoonizer ZNU</span>
+    </div>
+
+    <div id="content">
+        <div id="left_image">
+            <img src="{{ url_for("static", filename="cat.jpg") }}">
+        </div>
+
+        <form action="/cartoonize"  method="post" enctype="multipart/form-data">
+            <label for="file">select image</label>
+            <input id="file" type="file" name="image">
+            <input type="submit" value="Submit">
+        </form>
+        <div id="right_image">
+            <img src="{{ url_for("static", filename="cartoon_cat.jpg") }}">
+        </div>
+    </div>
+</body>
+</html>
